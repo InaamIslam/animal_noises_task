@@ -19,4 +19,4 @@ docker run -d -p 5000:5000 --name animal_noises_server --network animal_noises_n
 
 #run api
 
-docker run -d --name animal_noises_server --network animal_noises_network animal_noises_server
+docker run -d --name animal_noises_api --network animal_noises_network animal_noises_api

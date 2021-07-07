@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home():
     animal = requests.get('http://animal_noises_api:5000/get_animal') 
     noise = requests.post('http://animal_noises_api:5000/get_noise', data=animal.text) 
-    return render_template(index.html, animal=animal.text, noise=noise.text)
+    return render_template('index.html', animal=animal.text, noise=noise.text)
 
 
 if __name__ == "__main__":
